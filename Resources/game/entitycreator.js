@@ -14,8 +14,8 @@ var EntityCreator = ash.Class.extend({
 	createControls: function() {
 		var padLeftSprite = platino.createSprite({
 			image: 'graphics/leftpad.png',
-			width: 100,
-			height: 100,
+			width: 50,
+			height: 50,
 		    anchorPoint:{
 				x:0.5,
 				y:0.5
@@ -26,8 +26,8 @@ var EntityCreator = ash.Class.extend({
 
 		var padRightSprite = platino.createSprite({
 			image: 'graphics/rightpad.png',
-			width: 100,
-			height: 100,
+			width: 50,
+			height: 50,
 			anchorPoint:{
 				x:0.5,
 				y:0.5
@@ -38,8 +38,8 @@ var EntityCreator = ash.Class.extend({
 
 		var padAccelSprite = platino.createSprite({
 			image: 'graphics/accelpad.png',
-			width: 100,
-			height: 100,
+			width: 50,
+			height: 50,
 			anchorPoint:{
 				x:0.5,
 				y:0.5
@@ -50,8 +50,8 @@ var EntityCreator = ash.Class.extend({
 
 		var padShootSprite = platino.createSprite({
 			image: 'graphics/shootpad.png',
-			width: 100,
-			height: 100,
+			width: 50,
+			height: 50,
 			anchorPoint:{
 				x:0.5,
 				y:0.5
@@ -76,21 +76,21 @@ var EntityCreator = ash.Class.extend({
 
 		var movePadRightEntity = new ash.Entity()
 			.add(new ControlPad(padRightSprite.tag))
-			.add(new Position(100, 0, 0, 0))
+			.add(new Position(50, 0, 0, 0))
 			.add(new MotionControls(0, 80))
 			.add(new Display(padRightSprite));
 		this.engine.addEntity(movePadRightEntity);
 
 		var accelPadEntity = new ash.Entity()
 			.add(new ControlPad(padAccelSprite.tag))
-			.add(new Position(0, 460, 0, 0))
+			.add(new Position(100, 0, 0, 0))
 			.add(new MotionControls(140, 0))
 			.add(new Display(padAccelSprite));
 		this.engine.addEntity(accelPadEntity);
 
 		var shootPadEntity = new ash.Entity()
 			.add(new ControlPad(padShootSprite.tag))
-			.add(new Position(100, 460, 0, 0))
+			.add(new Position(150, 0, 0, 0))
 			.add(new Display(padShootSprite));
 		this.engine.addEntity(shootPadEntity);
 
