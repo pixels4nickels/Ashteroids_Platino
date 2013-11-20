@@ -1,0 +1,9 @@
+#appname:Ashteroids
+#appid:conm.p4n.platino.Ashteroids
+#type:mobile
+#guid:eb16ae26-1d04-45ed-b388-af95de20e434
+#version:1.0
+#publisher:mtwl
+#url:http://mtwl.org
+#image:appicon.png
+#desc:Demonstrates use of the Ash entity system with the Platino game sdk.
