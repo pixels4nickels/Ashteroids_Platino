@@ -149,14 +149,14 @@ var EntityCreator = ash.Class.extend({
 			.add(new Spaceship())
 			.add(new Position(this.gameState.width*0.5, this.gameState.height*0.5, 0, 6))
 			.add(new Motion(0, 0, 0, 15))
-			.add(new Gun(15, 15, 0.7, 4))
+			.add(new Gun(15, 15, 0.3, 2))
 			.add(new Display(spaceshipView));
 		this.engine.addEntity(spaceship);
 		return spaceship;
 	},
 
-	createUserBullet: function(gun, parentPosition) {
-		var r = parentPosition.rotation * Math.PI / 180.0;
+	createUserBullet: function(spaceship) {
+		var r = spaceship.position.rotation * Math.PI / 180.0;
 		var cos = Math.cos(r);
 		var sin = Math.sin(r);
 
@@ -165,9 +165,10 @@ var EntityCreator = ash.Class.extend({
 		var Motion = require('game/components/motion');
 		var Display = require('game/components/display');
 
+
 		var bulletPosition = new Position(
-			parentPosition.position.x + 30 - 5,
-			parentPosition.position.y + 30 - 5, 0, 0);
+			spaceship.position.position.x + spaceship.gun.offsetFromParent.x - 2.5,
+			spaceship.position.position.y + spaceship.gun.offsetFromParent.y - 2.5, 0, 0);
 
 		var bulletView = platino.createSprite({
 			image: 'graphics/bullet.png',
@@ -183,12 +184,17 @@ var EntityCreator = ash.Class.extend({
 			}
 		});
 		var bullet = new ash.Entity()
-			.add(new Bullet(gun.bulletLifetime))
+			.add(new Bullet(spaceship.gun.bulletLifetime))
 			.add(bulletPosition)
-			.add(new Motion(cos * 150, sin * 150, 0, 0))
+			.add(new Motion(
+				cos * 250 + spaceship.motion.velocity.x,
+				sin * 250 + spaceship.motion.velocity.y,
+				spaceship.motion.angularVelocity,
+				0
+			))
 			.add(new Display(bulletView));
 		this.engine.addEntity(bullet);
-		Ti.API.info("EntityCreator.update:"+parentPosition.rotation);
+		Ti.API.info("EntityCreator.update:"+spaceship.position.rotation);
 		return bullet;
 	},
 

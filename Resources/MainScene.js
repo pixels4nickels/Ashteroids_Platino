@@ -16,6 +16,7 @@ var MainScene = function(window, game) {
 		var EntityCreator = require('game/entitycreator');
 		var GameManager = require('game/systems/gamemanager');
 		var GameState = require('game/components/gamestate');
+		var CollisionSystem = require('game/systems/collisionsystem');
 		var MovementSystem = require('game/systems/movementsystem');
 		var RenderSystem = require('game/systems/rendersystem');
 		var BulletAgeSystem = require('game/systems/bulletagesystem');
@@ -64,10 +65,10 @@ var MainScene = function(window, game) {
 			new MovementSystem(gameState),
 			SystemPriorities.move
 		);
-//			this.engine.addSystem(
-//				new CollisionSystem(creator),
-//				SystemPriorities.resolveCollisions
-//			);
+		engine.addSystem(
+			new CollisionSystem(creator),
+			SystemPriorities.resolveCollisions
+		);
 		engine.addSystem(
 			new RenderSystem(scene),
 			SystemPriorities.render

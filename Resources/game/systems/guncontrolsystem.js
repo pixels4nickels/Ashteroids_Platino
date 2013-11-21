@@ -30,7 +30,7 @@ var GunControlSystem = require('lib/ash/ash').System.extend({
 		    }
 		    gun.timeSinceLastShot += time;
 		    if (gun.shooting && gun.timeSinceLastShot >= gun.minimumShotInterval) {
-			    this.creator.createUserBullet(gun, position);
+			    this.creator.createUserBullet(spaceship);
 			    gun.timeSinceLastShot = 0;
 		    }
 	    }

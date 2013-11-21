@@ -26,7 +26,6 @@ var RenderSystem = require('lib/ash/ash').System.extend({
     },
 
     removeFromDisplay: function (node) {
-
 	    this.scene.remove(node.display.view);
     },
 
@@ -40,8 +39,8 @@ var RenderSystem = require('lib/ash/ash').System.extend({
             display = node.display;
             view = display.view;
             position = node.position;
-	        view.x = position.position.x; //* view.anchorPoint.x;
-	        view.y = position.position.y; //* view.anchorPoint.y;
+	        view.x = position.position.x;
+	        view.y = position.position.y;
 	        view.angle = position.rotation;
         }
     }
