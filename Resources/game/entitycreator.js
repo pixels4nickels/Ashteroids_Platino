@@ -7,6 +7,7 @@ var EntityCreator = ash.Class.extend({
 		this.engine = engine;
 		this.gameState = gameState;
 		this.scene = scene;
+		this.initializeBulletPool(scene,30);
 		Ti.API.info("EntityCreator.constructor:done");
 		return this;
 	},
@@ -170,37 +171,85 @@ var EntityCreator = ash.Class.extend({
 			spaceship.position.position.x + spaceship.gun.offsetFromParent.x - 2.5,
 			spaceship.position.position.y + spaceship.gun.offsetFromParent.y - 2.5, 0, 0);
 
-		var bulletView = platino.createSprite({
-			image: 'graphics/bullet.png',
-			width: 5,
-			height: 5,
-			center:{
-				x:bulletPosition.x,
-				y:bulletPosition.y
-			},
-			anchorPoint:{
-				x:0.5,
-				y:0.5
-			}
-		});
-		var bullet = new ash.Entity()
-			.add(new Bullet(spaceship.gun.bulletLifetime))
-			.add(bulletPosition)
-			.add(new Motion(
-				cos * 250 + spaceship.motion.velocity.x,
-				sin * 250 + spaceship.motion.velocity.y,
-				spaceship.motion.angularVelocity,
-				0
-			))
-			.add(new Display(bulletView));
-		this.engine.addEntity(bullet);
-		Ti.API.info("EntityCreator.update:"+spaceship.position.rotation);
+		var bulletView =  this.getBullet();
+//			platino.createSprite({
+//			image: 'graphics/bullet.png',
+//			width: 5,
+//			height: 5,
+//			center:{
+//				x:bulletPosition.x,
+//				y:bulletPosition.y
+//			},
+//			anchorPoint:{
+//				x:0.5,
+//				y:0.5
+//			}
+//		});
+		var bullet;
+		if(bulletView){
+			bullet = new ash.Entity()
+				.add(new Bullet(spaceship.gun.bulletLifetime))
+				.add(bulletPosition)
+				.add(new Motion(
+					cos * 250 + spaceship.motion.velocity.x,
+					sin * 250 + spaceship.motion.velocity.y,
+					spaceship.motion.angularVelocity,
+					0
+				))
+				.add(new Display(bulletView));
+			this.engine.addEntity(bullet);
+			Ti.API.info("EntityCreator.update:"+spaceship.position.rotation);
+		}
 		return bullet;
 	},
 
 	destroyEntity: function(entity) {
 		this.engine.removeEntity(entity);
+	},
+
+	bulletObjectPool: null,
+	bulletsInUseObjectPool: null,
+
+	initializeBulletPool: function(view, num){
+		var bulletNum = num?num:10;
+		this.bulletObjectPool = new Array();
+		this.bulletsInUseObjectPool = new Array();
+		for (var i=0;i<bulletNum;i++){
+			var bullet = platino.createSprite(
+				{
+					image:'graphics/bullet.png',
+					width:5,
+					height:5
+				}
+			);
+			this.bulletObjectPool.push(bullet);
+			view.add(bullet);
+		}
+	},
+
+	getBullet: function(){
+		var bullet = this.bulletObjectPool.pop();
+		this.bulletsInUseObjectPool.push(bullet);
+		Ti.API.info("AssetFactory:getBullet  AVAILABLE->" + this.bulletObjectPool.length);
+		Ti.API.info("AssetFactory:getBullet     IN USE->" + this.bulletsInUseObjectPool.length);
+		return bullet;
+	},
+
+	returnBulletToPool: function(item){
+		var index = this.bulletsInUseObjectPool.indexOf(item);
+		var bullet =  this.bulletsInUseObjectPool.splice(index, 1)[0];
+		if(bullet && index > -1){
+			this.bulletObjectPool.push(bullet);
+			Ti.API.info("AssetFactory:returnBulletToPool AVAILABLE->" + this.bulletObjectPool.length);
+			Ti.API.info("AssetFactory:returnBulletToPool    IN USE->" + this.bulletsInUseObjectPool.length);
+		}else{
+			Ti.API.info("AssetFactory:returnBulletToPool no item found in bulletsInUseObjectPool--------------------------------------------------!!!!!!!!!!");
+		}
+
 	}
 });
 
 module.exports = EntityCreator;
+
+//card        888-2214299
+//checking    877-767-9383

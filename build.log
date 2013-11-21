@@ -1,0 +1,159 @@
+Logfile initialized
+[INFO] logfile = /Users/kenrogers/Documents/Toad_ash_js/build.log
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py install Asteroids /opt/Android-SDK /Users/kenrogers/Documents/Toad_ash_js/ com.p4n.asteroids 16
+[INFO] Titanium SDK version: 3.1.3 (09/18/13 12:00 222f4d1)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.045523 seconds on emulator to get ready
+[DEBUG] com.p4n.asteroids installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/kenrogers/Documents/Toad_ash_js/Resources/game/entitycreator.js => /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/game/entitycreator.js
+[TRACE] COPYING MODIFIED FILE: /Users/kenrogers/Documents/Toad_ash_js/Resources/game/systems/inputsystem.js => /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/game/systems/inputsystem.js
+[TRACE] COPYING MODIFIED FILE: /Users/kenrogers/Documents/Toad_ash_js/Resources/game/systems/rendersystem.js => /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/game/systems/rendersystem.js
+[TRACE] COPYING MODIFIED FILE: /Users/kenrogers/Documents/Toad_ash_js/Resources/MainScene.js => /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/MainScene.js
+[DEBUG] LiveView not enabled
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Users/kenrogers/Documents/Toad_ash_js/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/kenrogers/Documents/Toad_ash_js/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsActivity.java to javac build list
+[DEBUG] adding /Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsAppInfo.java to javac build list
+[DEBUG] adding /Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsApplication.java to javac build list
+[DEBUG] adding /Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/R.java to javac build list
+[DEBUG] Building Java Sources: "/Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsActivity.java" "/Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsAppInfo.java" "/Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/AsteroidsApplication.java" "/Users/kenrogers/Documents/Toad_ash_js/build/android/gen/com/p4n/asteroids/R.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/kenrogers/Documents/Toad_ash_js/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/drawable/appicon.png
+[DEBUG] from resource zip => assets/Resources/drawable-hdpi/appicon.png
+[DEBUG] from resource zip => assets/Resources/drawable-ldpi/appicon.png
+[DEBUG] from resource zip => assets/Resources/drawable-mdpi/appicon.png
+[DEBUG] from resource zip => assets/Resources/drawable-xhdpi/appicon.png
+[DEBUG] from resource zip => assets/Resources/drawable-xxhdpi/Icon-xxhdpi.png
+[DEBUG] from resource zip => assets/Resources/drawable-xxhdpi/appicon.png
+[DEBUG] from resource zip => assets/Resources/game/components/asteroid.js
+[DEBUG] from resource zip => assets/Resources/game/components/bullet.js
+[DEBUG] from resource zip => assets/Resources/game/components/controlpad.js
+[DEBUG] from resource zip => assets/Resources/game/components/display.js
+[DEBUG] from resource zip => assets/Resources/game/components/gamestate.js
+[DEBUG] from resource zip => assets/Resources/game/components/gun.js
+[DEBUG] from resource zip => assets/Resources/game/components/motion.js
+[DEBUG] from resource zip => assets/Resources/game/components/motioncontrols.js
+[DEBUG] from resource zip => assets/Resources/game/components/position.js
+[DEBUG] from resource zip => assets/Resources/game/components/spaceship.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/asteroidcollision.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/bulletage.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/bulletcollision.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/guncontrol.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/inputcontrol.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/motioncontrol.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/movement.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/render.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/spaceshipcollision.js
+[DEBUG] from resource zip => assets/Resources/game/nodes/spaceshipmotion.js
+[DEBUG] from resource zip => assets/Resources/game/systems/bulletagesystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/collisionsystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/gamemanager.js
+[DEBUG] from resource zip => assets/Resources/game/systems/guncontrolsystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/inputsystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/motioncontrolsystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/movementsystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/rendersystem.js
+[DEBUG] from resource zip => assets/Resources/game/systems/systempriorities.js
+[DEBUG] from resource zip => assets/Resources/game/entitycreator.js
+[DEBUG] from resource zip => assets/Resources/graphics/accelpad.png
+[DEBUG] from resource zip => assets/Resources/graphics/asteroid.png
+[DEBUG] from resource zip => assets/Resources/graphics/bullet.png
+[DEBUG] from resource zip => assets/Resources/graphics/leftpad.png
+[DEBUG] from resource zip => assets/Resources/graphics/movepad.png
+[DEBUG] from resource zip => assets/Resources/graphics/rightpad.png
+[DEBUG] from resource zip => assets/Resources/graphics/ship.png
+[DEBUG] from resource zip => assets/Resources/graphics/shootpad.png
+[DEBUG] from resource zip => assets/Resources/graphics/stub_300x20.png
+[DEBUG] from resource zip => assets/Resources/graphics/stub_320x20.png
+[DEBUG] from resource zip => assets/Resources/lib/ash/ash.js
+[DEBUG] from resource zip => assets/Resources/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/Icon-hdpi.png
+[DEBUG] from resource zip => assets/Resources/Icon-ldpi.png
+[DEBUG] from resource zip => assets/Resources/Icon-mdpi.png
+[DEBUG] from resource zip => assets/Resources/Icon-xhdpi.png
+[DEBUG] from resource zip => assets/Resources/MainScene.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/btn_check_buttonless_on_64.png
+[DEBUG] from resource zip => res/drawable/btn_more_64.png
+[DEBUG] from resource zip => res/drawable/disclosure_64.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => res/layout/titanium_ui_list_header_or_footer.xml
+[DEBUG] from resource zip => res/layout/titanium_ui_list_item.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_64.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] installing native lib: /Library/Application Support/Titanium/modules/android/co.lanica.platino/2.0.1/libs/armeabi/libco.lanica.platino.so
+[DEBUG] installing native lib: /Library/Application Support/Titanium/modules/android/co.lanica.platino/2.0.1/libs/armeabi-v7a/libco.lanica.platino.so
+[DEBUG] installing native lib: /Library/Application Support/Titanium/modules/android/co.lanica.platino/2.0.1/libs/x86/libco.lanica.platino.so
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.020614 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen

@@ -93,6 +93,8 @@ var MainScene = function(window, game) {
 
 
 	function onTouch(event) {
+		event.x *= game.touchScaleX;
+		event.y *= game.touchScaleY;
 		touchSignal.dispatch(event);
 	}
 

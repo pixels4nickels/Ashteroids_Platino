@@ -25,6 +25,7 @@ var BulletAgeSystem = require('lib/ash/ash').System.extend({
         var bullet = node.bullet;
         bullet.lifeRemaining -= time;
         if (bullet.lifeRemaining <= 0) {
+	        this.creator.returnBulletToPool(node.display);
             this.creator.destroyEntity(node.entity);
         }
     }

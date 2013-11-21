@@ -28,7 +28,6 @@ var InputSystem = require('lib/ash/ash').System.extend({
 		    for(var node = this.nodeList.head; node; node = node.next) { // go through the ui control entities
 			    if (node.display.view.contains(this.touchEvent.x, this.touchEvent.y)) {
 				    node.pad.active = true;
-					//Ti.API.info("InputSystem.update:touched: " + padType);
 				}else{
 				    node.pad.active = false;
 			    }

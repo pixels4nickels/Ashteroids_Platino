@@ -22,7 +22,10 @@ var RenderSystem = require('lib/ash/ash').System.extend({
 
     addToDisplay: function (node) {
 	   //Ti.API.info("RenderSystem.addToDisplay:"+node.display.view);
-	    this.scene.add(node.display.view);
+	    if(node){
+	        this.scene.add(node.display.view);
+	    }
+
     },
 
     removeFromDisplay: function (node) {
