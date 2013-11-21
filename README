@@ -1,11 +1,2 @@
 This is a simple asteroids game using the Platino Game SDK (https://github.com/Lanica/Platform). 
 I modified brejep's Ash entity system for JS (https://github.com/brejep/ash-js) to work with Platino.
-
-The game is currently in progress. Right now all you can do is fly around and shoot, but that is pretty fun!
-Here is a short list of what will be added soon:
-
-- Managing lives
-- Ship and Bullet Collisions
-- Ship and Asteroid destroy states
-- Refined UI controls
-- Entity and System tuning (gameplay)
